@@ -4,18 +4,10 @@
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
  
   <script>
-    var socket = io('http://casa.wordpress-napoli.it:3705');
+    var socket = io('http://server.mediaintegrati.it:3001');
     socket.on('battito', beat);
 
     function beat() {
-
-      // $("#cover").animate({"opacity" : 1},200,
-      // 			function(){$("#cover").animate({"opacity": 0},180,
-      // 				function() {$("#cover").animate({"opacity": 1},300,
-      //           function(){$("#cover").animate({"opacity": 0}, 2000)});
-      // 			});
-      // 		});
-//1 + (180)*(10-1)/(2680)
 
       element = document.getElementById("cover");
       element.classList.remove("beat");
